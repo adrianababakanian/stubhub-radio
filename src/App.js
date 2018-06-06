@@ -6,17 +6,19 @@ import './App.css';
 import NewHome from './components/react-new-home';
 import SpotifyPlayer from './components/react-spotify-player';
 import Performer from './components/react-performer';
+import Trigger from './components/trigger';
 
 class App extends Component {
   render() {
     return (
       <Router>
         <div>
-          <NavLink to="/radio/ed-sheeran">
-            <SpotifyPlayer uri="10exVja0key0uqUkk6LJRT" />
+          <SpotifyPlayer />
+          <NavLink to="/radio/vance-joy">
+          <Trigger />
           </NavLink>
-          <Route exact path="/radio" component={NewHome} />
-          <Route exact path="/radio/ed-sheeran" component={Performer} />
+          <Route path="/radio" component={NewHome} />
+          <Route path="/radio/vance-joy" component={Performer} />
         </div>
       </Router>
     );

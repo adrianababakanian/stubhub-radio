@@ -1,9 +1,9 @@
 import React from 'react';
-import picture from './performer-ed.png';
+import picture from './performer-vance.png';
 
 const Performer = () => {
   return (
-    <img src={picture} style={{width: "100%"}} />
+    <img src={picture} style={{width: "100%", position: "absolute", top: 0, "z-index": 1}} />
   )
 }
 

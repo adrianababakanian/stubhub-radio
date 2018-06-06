@@ -90,7 +90,7 @@
   height: 100px;
   background: white;
   position: absolute;
-  bottom: -120px;
+  bottom: -200px;
   z-index: 999;
   transition: 0.5s; }
   .block.show {

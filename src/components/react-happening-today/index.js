@@ -11,16 +11,21 @@ class HappeningToday extends Component {
   constructor(props) {
     super(props);
     this.state = {
-       on: true
+       onVance: true,
+       onEd: true
     }
   }
 
-  changeOn(){
-    this.setState({on: !this.state.on})
+  changeOnVance(){
+    this.setState({onVance: !this.state.onVance, onEd: this.state.onEd})
+  }
+
+  changeOnEd(){
+    this.setState({onEd: !this.state.onEd, onVance: this.state.onVance})
   }
 
   render() {
-    let btn_class = this.state.on ? "block show" : "block";
+    let btn_class = this.state.onEd ? "block show" : "block";
     return (
       <div>
 
@@ -29,7 +34,7 @@ class HappeningToday extends Component {
         <h2 className="title">Happening today </h2>
 
         <div className="item">
-          <div className="item-picture" onClick={this.changeOn.bind(this)}>
+          <div className="item-picture" onClick={this.changeOnVance.bind(this)}>
             <div className="play-hover">
               <MaterialIcon icon="play_arrow" size={30} style={{padding: 10}} className="playArrow"/>
             </div>
@@ -57,7 +62,7 @@ class HappeningToday extends Component {
         </div>
 
         <div className="item right">
-          <div className="item-picture">
+          <div className="item-picture" onClick={this.changeOnEd.bind(this)}>
             <div className="play-hover">
               <MaterialIcon icon="play_arrow" size={30} style={{padding: 10}} className="playArrow"/>
             </div>
