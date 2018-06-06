@@ -70,10 +70,15 @@
       color: #2f343b;
       font-size: 14px;
       float: left;
+      position: relative;
 
       .expand {
         position: absolute;
         bottom: 0;
+      }
+
+      .down {
+        top: 6px;
       }
     }
   }

@@ -3,38 +3,53 @@ import './index.css';
 
 import MaterialIcon from 'react-google-material-icons';
 
+import alcatraz from './alcatraz.jpg';
+import vance from './vance.jpg';
+import ed from './ed.jpg';
+
 class HappeningToday extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+       on: true
+    }
+  }
+
+  changeOn(){
+    this.setState({on: !this.state.on})
   }
 
   render() {
+    let btn_class = this.state.on ? "block show" : "block";
     return (
+      <div>
+
+
       <div className="wrapper">
         <h2 className="title">Happening today </h2>
 
         <div className="item">
-          <div className="item-picture">
-            <div className="play">
+          <div className="item-picture" onClick={this.changeOn.bind(this)}>
+            <div className="play-hover">
               <MaterialIcon icon="play_arrow" size={30} style={{padding: 10}} className="playArrow"/>
             </div>
+
+            <img src={vance} className="event-image" />
           </div>
           <div className="text">
-            <div className="date"> Fri, April 13th &middot; 5:55 pm  </div>
-            <div className="title"> Alcatraz Night Tour </div>
-            <div className="venue"> Alcatraz Island </div>
-            <div className="city"> San Francisco, CA </div>
+            <div className="date"> Wed, June 6th &middot; 7:30 pm  </div>
+            <div className="title"> Vance Joy </div>
+            <div className="venue"> Greek Theatre Berkeley </div>
+            <div className="city"> Berkeley, CA </div>
           </div>
         </div>
 
         <div className="item">
           <div className="item-picture">
-            <div className="play">
-              <MaterialIcon icon="play_arrow" size={30} style={{padding: 10}} className="playArrow"/>
-            </div>
+            <img src={alcatraz} className="event-image" />
           </div>
           <div className="text">
-            <div className="date"> Fri, April 13th  </div>
+            <div className="date"> Wed, June 6th &middot; 5:55 pm  </div>
             <div className="title"> Alcatraz Night Tour </div>
             <div className="venue"> Alcatraz Island </div>
             <div className="city"> San Francisco, CA </div>
@@ -43,17 +58,23 @@ class HappeningToday extends Component {
 
         <div className="item right">
           <div className="item-picture">
-            <div className="play">
+            <div className="play-hover">
               <MaterialIcon icon="play_arrow" size={30} style={{padding: 10}} className="playArrow"/>
             </div>
+              <img src={ed} className="event-image" />
           </div>
           <div className="text">
-            <div className="date"> Fri, April 13th  </div>
-            <div className="title"> Alcatraz Night Tour </div>
-            <div className="venue"> Alcatraz Island </div>
+            <div className="date"> Wed, June 6th &middot; 8:00 pm  </div>
+            <div className="title"> Ed Sheeran </div>
+            <div className="venue"> August Hall </div>
             <div className="city"> San Francisco, CA </div>
           </div>
         </div>
+
+      </div>
+
+      {/* <div className="trigger"></div> */}
+      <div className={btn_class}></div>
 
       </div>
     );

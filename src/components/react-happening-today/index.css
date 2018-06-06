@@ -19,10 +19,30 @@
       width: 100%;
       height: 220px;
       border-radius: 4px;
-      background: gray;
-      position: relative; }
-      .wrapper .item .item-picture:hover .play {
+      background: lightgray;
+      position: relative;
+      overflow: hidden; }
+      .wrapper .item .item-picture:hover .play-hover {
         display: block; }
+      .wrapper .item .item-picture .play-hover {
+        width: 30px;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 50px;
+        background: #00a1a1;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        padding: 5px;
+        cursor: pointer;
+        display: none; }
+        .wrapper .item .item-picture .play-hover .playArrow {
+          line-height: 40px;
+          text-align: center;
+          width: 30px;
+          margin: 0 auto;
+          padding: 5px; }
       .wrapper .item .item-picture .play {
         width: 30px;
         height: 30px;
@@ -42,6 +62,10 @@
           width: 30px;
           margin: 0 auto;
           padding: 5px; }
+      .wrapper .item .item-picture .event-image {
+        width: 100%; }
+      .wrapper .item .item-picture .event-image-long {
+        height: 100%; }
     .wrapper .item .text {
       width: 100%;
       height: 80px;
@@ -60,3 +84,28 @@
         font-family: Roboto;
         margin: 2px 0;
         font-weight: 100; }
+
+.block {
+  width: 100%;
+  height: 100px;
+  background: white;
+  position: absolute;
+  bottom: -120px;
+  z-index: 999;
+  transition: 0.5s; }
+  .block.show {
+    bottom: 0;
+    transition: 0.5s; }
+
+.trigger {
+  width: 300px;
+  height: 350px;
+  z-index: 999;
+  position: absolute;
+  background: red;
+  left: 250px;
+  cursor: pointer; }
+
+.trigger:hover ~ .block {
+  bottom: -100px;
+  transition: 0.5s; }

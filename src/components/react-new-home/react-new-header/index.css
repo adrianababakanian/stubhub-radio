@@ -53,7 +53,10 @@
       padding: 0 45px;
       color: #2f343b;
       font-size: 14px;
-      float: left; }
+      float: left;
+      position: relative; }
       .headerWrapper .categories .categoryTab .expand {
         position: absolute;
         bottom: 0; }
+      .headerWrapper .categories .categoryTab .down {
+        top: 6px; }

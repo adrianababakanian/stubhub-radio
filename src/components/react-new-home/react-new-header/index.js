@@ -17,7 +17,7 @@ const NewHeader = () => {
         <div className="signin">Sign in</div>
       </div>
       <div className="categories">
-        <div className="categoryTab">Find events by category <MaterialIcon icon="expand_more" size={20} className="expand"/> </div>
+        <div className="categoryTab">Find events by category <MaterialIcon icon="expand_more" size={20} className="expand down"/> </div>
         <div className="categoryTab" style={{color: "#d4d8dc", "font-family": "Helvetica Neue", "font-weight": 400, "font-size": "20px"}}> | </div>
         <div className="categoryTab">What&apos;s new</div>
         <div className="categoryTab">Popular</div>
