@@ -20,7 +20,7 @@ class HappeningToday extends Component {
             </div>
           </div>
           <div className="text">
-            <div className="date"> Fri, April 13th  </div>
+            <div className="date"> Fri, April 13th &middot; 5:55 pm  </div>
             <div className="title"> Alcatraz Night Tour </div>
             <div className="venue"> Alcatraz Island </div>
             <div className="city"> San Francisco, CA </div>

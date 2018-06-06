@@ -1,8 +1,11 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass|Roboto:regular,bold,italic&subset=latin,latin-ext");
 .wrapper {
   width: 85%;
   max-width: 1180px;
   position: relative;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: #2f343b;
+  font-family: Overpass; }
   .wrapper .item {
     width: 373px;
     position: relative;
@@ -23,6 +26,7 @@
       .wrapper .item .item-picture .play {
         width: 30px;
         height: 30px;
+        border: 1px solid white;
         border-radius: 50px;
         background: #00a1a1;
         position: absolute;
@@ -45,10 +49,14 @@
       position: absolute;
       font-size: 14px; }
       .wrapper .item .text .date {
-        margin: 8px 0 3px 0; }
+        margin: 12px 0 0 0;
+        color: #c50076;
+        font-weight: 800; }
       .wrapper .item .text .title {
-        font-size: 16px; }
-      .wrapper .item .text .venue {
-        margin: 3px 0; }
-      .wrapper .item .text .city {
-        margin: 3px 0; }
+        font-size: 16px;
+        font-weight: 800;
+        margin: -1px 0; }
+      .wrapper .item .text .venue, .wrapper .item .text .city {
+        font-family: Roboto;
+        margin: 2px 0;
+        font-weight: 100; }

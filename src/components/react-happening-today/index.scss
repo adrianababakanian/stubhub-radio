@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass|Roboto:regular,bold,italic&subset=latin,latin-ext');
+
 .wrapper {
   width: 85%;
   max-width: 1180px;
   position: relative;
   margin: 0 auto;
+  color: #2f343b;
+  font-family: Overpass;
 
   .item {
     width: 373px;
@@ -32,6 +36,7 @@
       .play {
         width: 30px;
         height: 30px;
+        border: 1px solid white;
         border-radius: 50px;
         background: #00a1a1;
         position: absolute;
@@ -60,16 +65,19 @@
       font-size: 14px;
 
       .date {
-        margin: 8px 0 3px 0;
+        margin: 12px 0 0 0;
+        color: #c50076;
+        font-weight: 800;
       }
       .title {
         font-size: 16px;
+        font-weight: 800;
+        margin: -1px 0;
       }
-      .venue {
-        margin: 3px 0;
-      }
-      .city {
-        margin: 3px 0;
+      .venue, .city {
+        font-family: Roboto;
+        margin: 2px 0;
+        font-weight: 100;
       }
     }
 

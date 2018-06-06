@@ -10,13 +10,14 @@ const NewHeader = () => {
         <div className="logo"><img src={logo} className="logoPng" /></div>
         <div className="searchBar">
           Search for an event...
-          | <MaterialIcon icon="search" size={28}/> 
+          <div className="right">
+            <MaterialIcon icon="search" size={26}/>
+          </div>
         </div>
-        <div className="lower"></div>
-        <div className="floaters"></div>
+        <div className="signin">Sign in</div>
       </div>
       <div className="categories">
-        <div className="categoryTab">Find events by category</div>
+        <div className="categoryTab">Find events by category <MaterialIcon icon="expand_more" size={20} className="expand"/> </div>
         <div className="categoryTab" style={{color: "#d4d8dc", "font-family": "Helvetica Neue", "font-weight": 400, "font-size": "20px"}}> | </div>
         <div className="categoryTab">What&apos;s new</div>
         <div className="categoryTab">Popular</div>

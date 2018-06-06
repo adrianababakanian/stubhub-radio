@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Overpass:regular,bold,italic&subset=latin,latin-ext");
 .headerWrapper {
   width: 100%;
   max-width: 1180px;
@@ -5,12 +6,15 @@
   left: 50%;
   transform: translateX(-50%);
   position: relative;
-  font-family: sans-serif; }
+  font-family: Overpass, sans-serif; }
   .headerWrapper .upper {
     height: 60px;
     width: 100%;
     max-width: 1180px;
-    position: relative; }
+    position: relative;
+    font-size: 14px;
+    color: #d4d8dc;
+    line-height: 30px; }
     .headerWrapper .upper .logo {
       margin: 12px 20px 12px 0;
       float: left; }
@@ -23,12 +27,20 @@
       border: solid 1px #d4d8dc;
       border-radius: 4px;
       float: left;
-      line-height: 30px;
-      font-size: 16px;
-      color: #d4d8dc;
       padding: 0 20px;
-      font-family: Interstate, sans-serif;
-      font-size: 14px; }
+      position: relative; }
+      .headerWrapper .upper .searchBar .right {
+        position: absolute;
+        right: 0;
+        padding: 0 10px;
+        top: 2px;
+        border-left: 1px solid #d4d8dc;
+        height: 25px; }
+    .headerWrapper .upper .signin {
+      position: absolute;
+      right: 0;
+      line-height: 65px;
+      color: #2f343b; }
   .headerWrapper .categories {
     width: 100%;
     max-width: 1180px;
@@ -41,5 +53,7 @@
       padding: 0 45px;
       color: #2f343b;
       font-size: 14px;
-      font-family: Interstate, sans-serif;
       float: left; }
+      .headerWrapper .categories .categoryTab .expand {
+        position: absolute;
+        bottom: 0; }
