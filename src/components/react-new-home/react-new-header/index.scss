@@ -1,0 +1,59 @@
+.headerWrapper {
+  width: 100%;
+  max-width: 1180px;
+  height: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  position: relative;
+  font-family: sans-serif;
+
+  .upper {
+    height: 60px;
+    width: 100%;
+    max-width: 1180px;
+    position: relative;
+
+    .logo {
+      margin: 12px 20px 12px 0;
+      float: left;
+
+      .logoPng {
+        width: 75px;
+      }
+    }
+
+    .searchBar {
+      width: 800px;
+      height: 30px;
+      margin: 15px 0;
+      border: solid 1px #d4d8dc;
+      border-radius: 4px;
+      float: left;
+      line-height: 30px;
+      font-size: 16px;
+      color: #d4d8dc;
+      padding: 0 20px;
+      font-family: Interstate, sans-serif;
+      font-size: 14px;
+    }
+  }
+
+  .categories {
+    width: 100%;
+    max-width: 1180px;
+    height: 30px;
+    position: relative;
+    border-top: solid 1px #d4d8dc;
+    position: absolute;
+
+    .categoryTab {
+      line-height: 30px;
+      padding: 0 45px;
+      color: #2f343b;
+      font-size: 14px;
+      font-family: Interstate, sans-serif;
+      float: left;
+    }
+  }
+
+}

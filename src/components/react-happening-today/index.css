@@ -1,0 +1,54 @@
+.wrapper {
+  width: 85%;
+  max-width: 1180px;
+  position: relative;
+  margin: 0 auto; }
+  .wrapper .item {
+    width: 373px;
+    position: relative;
+    height: 300px;
+    cursor: pointer;
+    float: left;
+    margin: 0 30px 0 0; }
+    .wrapper .item.right {
+      margin: 0; }
+    .wrapper .item .item-picture {
+      width: 100%;
+      height: 220px;
+      border-radius: 4px;
+      background: gray;
+      position: relative; }
+      .wrapper .item .item-picture:hover .play {
+        display: block; }
+      .wrapper .item .item-picture .play {
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        background: #00a1a1;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: white;
+        padding: 5px;
+        cursor: pointer;
+        display: none; }
+        .wrapper .item .item-picture .play .playArrow {
+          line-height: 40px;
+          text-align: center;
+          width: 30px;
+          margin: 0 auto;
+          padding: 5px; }
+    .wrapper .item .text {
+      width: 100%;
+      height: 80px;
+      left: 0;
+      position: absolute;
+      font-size: 14px; }
+      .wrapper .item .text .date {
+        margin: 8px 0 3px 0; }
+      .wrapper .item .text .title {
+        font-size: 16px; }
+      .wrapper .item .text .venue {
+        margin: 3px 0; }
+      .wrapper .item .text .city {
+        margin: 3px 0; }

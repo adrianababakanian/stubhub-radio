@@ -1,0 +1,14 @@
+.spotifyFooter {
+  width: 100%;
+  max-width: 1180px;
+  height: 40px;
+  background: #2f343b;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%); }
+  .spotifyFooter .albumArt {
+    width: 30px;
+    height: 30px;
+    background: white;
+    margin: 5px; }
