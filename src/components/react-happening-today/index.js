@@ -25,7 +25,7 @@ class HappeningToday extends Component {
   }
 
   render() {
-    let btn_class = this.state.onEd ? "block show" : "block";
+    let btn_class = this.state.onVance ? "block show" : "block";
     return (
       <div>
 
